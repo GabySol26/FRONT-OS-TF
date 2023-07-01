@@ -1,0 +1,20 @@
+<div class="modal-container">
+  <h2>Filtrar Cliente Botica</h2>
+
+  <!-- Campos de entrada para los datos de filtrado -->
+    <div class="input-row">
+      <label>Nombre Botica</label>
+      <input [(ngModel)]="proveedor" placeholder="Proveedor" />
+    </div>
+  <h3>o</h3>
+  <div class="input-row">
+    <label>RUC</label>
+    <input [(ngModel)]="ruc" placeholder="Ruc" />
+  </div>
+
+  <!-- Botones -->
+  <div class="button-container">
+    <button mat-raised-button color="warn" (click)="cancelar()">Cancelar</button>
+    <button mat-raised-button color="primary" (click)="confirmar()">Filtrar</button>
+  </div>
+</div>

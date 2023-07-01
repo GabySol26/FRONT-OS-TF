@@ -1,0 +1,54 @@
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.modal-container h2 {
+  margin-bottom: 1rem;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.input-row label {
+  width: 120px;
+  margin-right: 1rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.button-container button {
+  margin-right: 1rem;
+}
+
+.button-container button.mat-warn {
+  background-color: #e58484;
+  color: #fff;
+}
+
+.button-container button.mat-primary {
+  background-color: #e17676;
+  color: #fff;
+}

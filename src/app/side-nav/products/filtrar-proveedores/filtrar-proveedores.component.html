@@ -1,0 +1,15 @@
+<div class="modal-container">
+  <h2>Filtrar Producto</h2>
+
+  <!-- Campos de entrada para los datos de filtrado -->
+    <div class="input-row">
+      <label>Proveedor</label>
+      <input [(ngModel)]="proveedor" placeholder="Proveedor" />
+    </div>
+
+  <!-- Botones -->
+  <div class="button-container">
+    <button mat-raised-button color="warn" (click)="cancelar()">Cancelar</button>
+    <button mat-raised-button color="primary" (click)="confirmar()">Filtrar</button>
+  </div>
+</div>

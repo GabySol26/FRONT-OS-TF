@@ -1,0 +1,35 @@
+<div class="modal-container">
+  <div class="modal-content">
+    <h1 style="color: #e87676;">Crear Solicitud de Reabastecimiento</h1>
+
+    <div class="columns-container">
+      <div class="left-column">
+        <div class="input-container">
+          <label class="label-red">Descripción:</label>
+          <textarea [(ngModel)]="descripcion" rows="5"></textarea>
+        </div>
+
+        <h3 class="h3-red">Agregar producto</h3>
+
+        <div class="input-container">
+          <label>Producto:</label>
+          <input [(ngModel)]="producto" placeholder="Producto" />
+        </div>
+
+        <div class="input-container">
+          <label>Cantidad:</label>
+          <input [(ngModel)]="cantidad" type="number" placeholder="Cantidad" />
+        </div>
+        <div class="button-container">
+          <button mat-raised-button color="primary" class="red-button" (click)="agregarProducto()">Agregar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button mat-raised-button color="warn" class="red-button" (click)="cancelar()">Cancelar</button>
+      <button mat-raised-button color="primary" class="red-button" (click)="confirmarAbastecimiento()">Confirmar Abastecimiento</button>
+    </div>
+  </div>
+</div>
+

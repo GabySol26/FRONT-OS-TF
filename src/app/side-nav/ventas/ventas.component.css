@@ -1,0 +1,45 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #070707;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button-container button {
+  margin: 0 10px;
+  background-color: #e16767;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table {
+  width: 80%;
+  margin-bottom: 30px;
+  border: 2px solid #ee8585;
+}
+
+.mat-paginator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.mat-paginator .mat-paginator-range-label {
+  color: #ef8d8d;
+}

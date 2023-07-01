@@ -1,0 +1,76 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+mat-icon{
+  font-size: 70px;
+  padding: 40px;
+  align-items: center;
+  text-align: center;
+}
+
+h1{
+  margin: 0;
+}
+button{
+  width: 400px;
+  height: 400px;
+  margin: 5px;
+  background-color: darksalmon;
+  border-radius: 20px;
+}
+
+.button-68 {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #D96F75;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, 0.15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+  width: 200px;
+  height: 80px;
+}
+
+.button-68:hover {
+  background-color: #db506c;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 0.35s;
+}
+
+.button-68:active {
+  transform: translateY(2px);
+  transition-duration: 0.35s;
+}
+
+.button-68:hover {
+  box-shadow: rgba(39, 174, 96, 0.2) 0 6px 12px;
+}

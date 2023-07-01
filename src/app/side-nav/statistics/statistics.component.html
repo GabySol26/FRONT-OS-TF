@@ -1,0 +1,27 @@
+<div class="container">
+  <button mat-raised-button color="primary" (click)="agregarSolicitud()">Agregar Solicitud de Abastecimiento</button>
+  <h2 class="title">Mis solicitudes de Abastecimientos</h2>
+  <table mat-table [dataSource]="dataSource" class="table">
+    <!-- Código -->
+    <ng-container matColumnDef="medicineId">
+      <th mat-header-cell *matHeaderCellDef>ID Medicina</th>
+      <td mat-cell *matCellDef="let solicitud">{{ solicitud.medicineId }}</td>
+    </ng-container>
+
+    <!-- Fecha de Solicitud -->
+    <ng-container matColumnDef="entryDate">
+      <th mat-header-cell *matHeaderCellDef>Fecha de Solicitud</th>
+      <td mat-cell *matCellDef="let solicitud">{{ solicitud.entryDate }}</td>
+    </ng-container>
+
+    <!-- Descripción -->
+    <ng-container matColumnDef="descripcion">
+      <th mat-header-cell *matHeaderCellDef>Descripción</th>
+      <td mat-cell *matCellDef="let solicitud">{{ solicitud.descripcion }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let solicitud; columns: displayedColumns"></tr>
+  </table>
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>

@@ -1,0 +1,30 @@
+<div class="modal-container">
+  <h2>Agregar Nueva Medicina</h2>
+
+  <!-- Campos de entrada para los datos del producto -->
+  <div class="input-container">
+    <div class="input-row">
+      <label>Nombre Comercial</label>
+      <input matInput [(ngModel)]="commercialName" placeholder="Nombre Comercial" />
+    </div>
+    <div class="input-row">
+      <label>Nombre Farmaceutico</label>
+      <input matInput [(ngModel)]="genericName" placeholder="Nombre Genérico" />
+    </div>
+    <div class="input-row">
+      <label>Precio Unidad inicial</label>
+      <input matInput [(ngModel)]="costPrice" placeholder="Precio" />
+    </div>
+    <div class="input-row">
+      <label>Categoria</label>
+      <input matInput [(ngModel)]="medicineTypeId" placeholder="Numero de Categoria" />
+    </div>
+  </div>
+
+  <!-- Botones -->
+  <div class="button-container">
+    <button mat-raised-button color="warn" (click)="cancelar()">Cancelar</button>
+    <button mat-raised-button color="primary" (click)="confirmar()">Confirmar</button>
+  </div>
+
+</div>

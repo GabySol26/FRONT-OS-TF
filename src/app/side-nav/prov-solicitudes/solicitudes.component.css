@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #070707;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button-container button {
+  margin: 0 10px;
+  background-color: #e16767;
+  color: white;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mat-paginator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.mat-paginator .mat-paginator-range-label {
+  color: #ef8d8d;
+}
+
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+.table tr {
+  display: flex;
+}
+
+.table th,
+.table td {
+  flex: 1;
+}

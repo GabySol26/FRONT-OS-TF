@@ -1,0 +1,29 @@
+<div class="modal-container">
+  <h2>Agregar Producto</h2>
+
+  <!-- Campos de entrada para los datos del producto -->
+  <div class="input-container">
+    <div class="input-row">
+      <label>Cantidad</label>
+      <input matInput [(ngModel)]="quantity" placeholder="Cantidad" />
+    </div>
+    <div class="input-row">
+      <label>Precio de Venta</label>
+      <input matInput [(ngModel)]="salePrice" placeholder="Precio de Venta" />
+    </div>
+    <div class="input-row">
+      <label>Usuario</label>
+      <input matInput [(ngModel)]="user" placeholder="Numero de Usuario" />
+    </div>
+    <div class="input-row">
+      <label>Medicina</label>
+      <input matInput [(ngModel)]="medicine" placeholder="Numero de medicina" />
+    </div>
+  </div>
+
+  <!-- Botones -->
+  <div class="button-container">
+    <button mat-raised-button color="warn" (click)="cancelar()">Cancelar</button>
+    <button mat-raised-button color="primary" (click)="confirmar()">Confirmar</button>
+  </div>
+</div>

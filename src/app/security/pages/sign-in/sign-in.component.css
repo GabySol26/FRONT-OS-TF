@@ -1,0 +1,167 @@
+p {
+  line-height: 1rem;
+}
+
+img{
+  margin-left: 180px;
+}
+
+a{
+  color:white;
+}
+
+h1{
+  color: white;
+}
+
+.card {
+  padding: 20px;
+}
+
+.form-group input {
+  margin-bottom: 20px;
+}
+
+.login-page {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  background-color: #121212;
+}
+
+.custom-container {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #B7334D;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-control {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--accent);
+  border-radius: 4px;
+  text-align: center;
+  outline: transparent;
+  width: 90%;
+}
+
+.input-control {
+  padding: 12px 0px;
+  font-size: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--accent);
+  border-radius: 4px;
+  text-align: center;
+  outline: transparent;
+  width: 43%;
+  margin-left: 20px;
+}
+
+.input-text{
+  font-size: 22px;
+  font-weight: 500;
+  color:white;
+}
+
+.button-68 {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #D96F75;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, 0.15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+}
+
+.button-68:hover {
+  background-color: #db506c;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 0.35s;
+}
+
+.button-68:active {
+  transform: translateY(2px);
+  transition-duration: 0.35s;
+}
+
+.button-68:hover {
+  box-shadow: rgba(39, 174, 96, 0.2) 0 6px 12px;
+}
+
+.login-page .fade-enter-active,
+.login-page .fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.login-page .fade-enter,
+.login-page .fade-leave-to {
+  opacity: 0;
+}
+
+.login-page h1 {
+  margin-bottom: 1.5rem;
+}
+
+.error {
+  animation-name: errorShake;
+  animation-duration: 0.3s;
+}
+
+@keyframes errorShake {
+  0% {
+    transform: translateX(-25px);
+  }
+  25% {
+    transform: translateX(25px);
+  }
+  50% {
+    transform: translateX(-25px);
+  }
+  75% {
+    transform: translateX(25px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.error-message {
+  color: rgb(87, 29, 29);
+  font-size: 22px;
+}

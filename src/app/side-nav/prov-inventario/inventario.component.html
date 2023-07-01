@@ -1,0 +1,34 @@
+<div class="buttons-container">
+  <button mat-raised-button color="primary" (click)="AgregarIventarioComponent()">Agregar Inventario</button>
+</div>
+<h2 class="title">Inventario De Medicinas</h2>
+<table mat-table [dataSource]="dataSource" class="table">
+  <!-- Columnas de la tabla -->
+  <ng-container matColumnDef="medicineId">
+    <th mat-header-cell *matHeaderCellDef>Código</th>
+    <td mat-cell *matCellDef="let item">{{ item.medicineId }}</td>
+  </ng-container>
+  <ng-container matColumnDef="commercialName">
+    <th mat-header-cell *matHeaderCellDef>Nombre comercial</th>
+    <td mat-cell *matCellDef="let item">{{ item.commercialName }}</td>
+  </ng-container>
+  <ng-container matColumnDef="costPrice">
+    <th mat-header-cell *matHeaderCellDef>Precio Unidad inicial</th>
+    <td mat-cell *matCellDef="let item">S/ {{ item.costPrice }}</td>
+  </ng-container>
+  <ng-container matColumnDef="genericName">
+    <th mat-header-cell *matHeaderCellDef>Nombre Farmaceutico</th>
+    <td mat-cell *matCellDef="let item">{{ item.genericName }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="typeName">
+    <th mat-header-cell *matHeaderCellDef>Categoria</th>
+    <td mat-cell *matCellDef="let item">{{ item.medicineType.typeName}}</td>
+  </ng-container>
+  <!-- Cabeceras de la tabla -->
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+
+  <!-- Filas de la tabla -->
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
+<mat-paginator [pageSizeOptions]="[10, 25, 100]" showFirstLastButtons></mat-paginator>
